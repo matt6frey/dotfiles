@@ -1,0 +1,32 @@
+
+if command -v php artisan &> /dev/null
+then
+    echo "php artisan alias added."
+    alias ar='php artisan '
+    alias arms='ar migrate --seed'
+    alias art='vendor/bin/phpunit tests//'
+    alias daemon='php artisan queue:work --daemon'
+    exit
+fi
+
+alias ch='git checkout '
+alias commit='git commit -m $*'
+alias ga='git add '
+alias get='grep -i '
+alias gp='git pull origin '
+alias gs='git status'
+alias gsm='commit '
+alias ll='ls -l'
+alias log='git log --oneline'
+alias ls='ls -F --color=auto --show-control-chars'
+alias myCommits='git log --author='\''Matt Frey'\'' --oneline'
+alias findMC='myCommits | get'
+alias cgraph='git log --oneline --graph --decorate --all'
+alias src='source ~/.bashrc'
+alias stat='git status'
+
+
+# Import functions and add git branch to git folders output
+if [ -f ~/.bash-functions ]; then
+    . ./bash-functions
+    export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
