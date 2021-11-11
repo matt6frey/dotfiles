@@ -1,3 +1,3 @@
-mv .bash-functions ~/.bash-functions
-mv .bash-aliases ~/.bash-aliases
+cp .bash-functions ~/.bash-functions
+cp .bash-aliases ~/.bash-aliases
 source ~/.bashrc
