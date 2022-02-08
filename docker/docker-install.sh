@@ -26,4 +26,4 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose -y
 
 echo "======= Installation Complete! ======="
 
-sudo docker login
+sudo service docker start && docker login
