@@ -1,10 +1,10 @@
 sudo apt-get update
 
-sudo apt -y install php7.4
+sudo apt -y install php8.1
 
 php -v
 
-sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath
+sudo apt-get install -y php8.1-cli php8.1-json php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
 
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
